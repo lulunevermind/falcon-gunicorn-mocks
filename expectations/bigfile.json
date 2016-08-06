@@ -1,12 +1,7 @@
 {
   "url": "/bigfile",
-  "expectations": {
-   "contains": ["bigfile"]
-  },
-  "request": {
-    "file": "bigfile.req"
-  },
-  "response": {
-    "file": "bigfile.resp"
-  }
+  "expectations": [
+    {"contains": ["bigfile"], "request": "bigfile.req", "response": "bigfile.resp"},
+    {"contains": ["bigfileFAKE"], "request": "bigfile_fake.req", "response": "bigfile_fake.resp"}
+  ]
 }

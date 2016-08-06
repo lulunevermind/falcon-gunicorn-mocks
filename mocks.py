@@ -14,21 +14,22 @@ import logging
 import sys
 
 root = logging.getLogger()
-# root.setLevel(logging.DEBUG)
-
-# ch = logging.StreamHandler(sys.stdout)
-# ch.setLevel(logging.DEBUG)
-# ch.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
-# root.addHandler(ch)
+root.setLevel(logging.DEBUG)
+#
+ch = logging.StreamHandler(sys.stdout)
+ch.setLevel(logging.DEBUG)
+ch.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+root.addHandler(ch)
 
 
 MAPPING = load_data()
 
 api = application = falcon.API()
 
-for key in MAPPING:
-    logging.info('Route added -->> %s' % key)
-    api.add_route('%s' % key, default_handler.DefaultHandler(MAPPING[key]))
+for url, expectations in MAPPING.items():
+    print(url)
+    logging.info('Route added -->> %s' % url)
+    api.add_route('%s' % url, default_handler.DefaultHandler(expectations))
 
 
 if __name__ == '__main__':
