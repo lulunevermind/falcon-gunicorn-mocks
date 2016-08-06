@@ -1,7 +1,9 @@
+#gunicorn -w 4 mocks
+# curl -v -XPOST 0.0.0.0:8000/SID0003030 -d @mvd_full.req
+
 from wsgiref import simple_server
 
 import falcon
-
 import sid
 
 from loader import load_data
