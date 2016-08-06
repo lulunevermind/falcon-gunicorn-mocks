@@ -22738,6 +22738,7 @@
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
+      bigfile
     </hashTree>
   </hashTree>
 </jmeterTestPlan>

@@ -1,0 +1,12 @@
+{
+  "url": "/bigfile",
+  "expectations": {
+   "contains": ["bigfile"]
+  },
+  "request": {
+    "file": "bigfile.req"
+  },
+  "response": {
+    "file": "bigfile.resp"
+  }
+}

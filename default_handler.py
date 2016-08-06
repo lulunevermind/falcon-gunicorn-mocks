@@ -2,7 +2,7 @@ import falcon
 import logging
 
 
-class Resource(object):
+class DefaultHandler(object):
 
     def __init__(self, mappings):
         self.mappings = mappings

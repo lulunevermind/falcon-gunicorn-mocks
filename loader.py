@@ -1,5 +1,6 @@
 import os
 import json
+import logging
 
 STORAGE_DIR = 'reqResps'
 EXPECTATIONS_DIR = 'expectations'
@@ -12,17 +13,15 @@ def load_data():
         for name in files:
             with open(os.path.join(root, name), 'r') as expectations:
                 exp = json.load(expectations)
-                print(exp)
+                logging.info('Expectation file found -->> %s' % exp)
                 name = name.strip('.json')
-                print('%s expectations...' % name)
                 request_filename = exp['request']['file']
                 response_filename = exp['response']['file']
-                print(request_filename)
                 exp['request']['file'] = open(os.path.join(STORAGE_DIR, request_filename)).read()
                 exp['response']['file'] = open(os.path.join(STORAGE_DIR, response_filename)).read()
                 if not MAPPING.get(exp['url']):
                     MAPPING[exp['url']] = exp
-    print(MAPPING)
+    logging.info('FULL MAPPING -->> %s' % MAPPING)
     return MAPPING
 
 if __name__ == '__main__':
