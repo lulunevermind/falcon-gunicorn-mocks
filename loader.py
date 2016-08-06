@@ -29,7 +29,7 @@ def load_data():
                             MAPPING[url] = [expectation]
                         else:
                             MAPPING[url] += [expectation]
-    logging.info('FULL MAPPING -->> %s' % MAPPING)
+    # logging.info('FULL MAPPING -->> %s' % MAPPING)
     return MAPPING
 
 if __name__ == '__main__':

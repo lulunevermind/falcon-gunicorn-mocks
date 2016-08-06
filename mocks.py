@@ -2,6 +2,7 @@
 #gunicorn -k gevent -w 6 mocks
 # curl -v -XPOST 0.0.0.0:8000/SID0003030 -d @mvd_full.req
 # curl -v -XPOST localhost:8000/bigfile -d @bigfile.req
+#curl -v -XPOST localhost:8000/bigfile -d @bigfile_fake.req
 
 from wsgiref import simple_server
 
@@ -14,12 +15,12 @@ import logging
 import sys
 
 root = logging.getLogger()
-root.setLevel(logging.DEBUG)
-#
-ch = logging.StreamHandler(sys.stdout)
-ch.setLevel(logging.DEBUG)
-ch.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
-root.addHandler(ch)
+# root.setLevel(logging.DEBUG)
+# #
+# ch = logging.StreamHandler(sys.stdout)
+# ch.setLevel(logging.DEBUG)
+# ch.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+# root.addHandler(ch)
 
 
 MAPPING = load_data()
