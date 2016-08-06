@@ -4,7 +4,7 @@ import falcon
 
 import sid
 
-from loader import load_expectations
+from loader import load_data
 
 import logging
 import sys
@@ -18,13 +18,12 @@ ch.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(me
 root.addHandler(ch)
 
 
-MAPPING = load_expectations()
-print(MAPPING)
+MAPPING = load_data()
 
 api = application = falcon.API()
 
 for key in MAPPING:
-    logging.info('Key in MAPPINGS -->> %s' % key)
+    logging.info('Route added -->> %s' % key)
     api.add_route('%s' % key, sid.Resource(MAPPING[key]))
 
 

@@ -13,11 +13,16 @@ class Resource(object):
 
     def on_post(self, req, resp):
         body = req.stream.read()
+        logging.info('Route triggered -->> %s' % req.path)
         logging.info('Avaliable expectations -->> %s' % self.mappings['expectations'])
-        for expectation, expression in self.mappings['expectations'].iteritems():
-            print(expectation, expression)
-        # print(self.mappings['response']['file'])
-        # exp_method = mocks.MAPPING['mvd_simple']['']
-        # if body.__contains__('123123'):
-        #     print('contains!')
-        # resp.body = '123'
+        for expectation, expressions in self.mappings['expectations'].iteritems():
+            logging.info('Expectations: %s, Expressions: %s' % (expectation, expressions))
+            if expectation == 'contains':
+                for exp in expressions:
+                    logging.info('Looking for %s in request' % exp)
+                    if body.__contains__(exp):
+                        response = self.mappings['response']['file']
+                        resp.body = response
+                        logging.info('Response finded -->> %s' % response)
+                    else:
+                        logging.info('No response found with expectations!')

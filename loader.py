@@ -6,7 +6,7 @@ EXPECTATIONS_DIR = 'expectations'
 PARSED_DIRS = [EXPECTATIONS_DIR, STORAGE_DIR]
 
 
-def load_expectations():
+def load_data():
     MAPPING = {}
     for root, dirs, files in os.walk(EXPECTATIONS_DIR, topdown=False):
         for name in files:
@@ -26,4 +26,4 @@ def load_expectations():
     return MAPPING
 
 if __name__ == '__main__':
-    mapping = load_expectations()
+    mapping = load_data()
