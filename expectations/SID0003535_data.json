@@ -1,0 +1,12 @@
+{
+  "url": "/SID0003535/data",
+  "expectations": {
+   "contains": ["simple"]
+  },
+  "request": {
+    "file": "mvd_simple.req"
+  },
+  "response": {
+    "file": "mvd_simple.resp"
+  }
+}

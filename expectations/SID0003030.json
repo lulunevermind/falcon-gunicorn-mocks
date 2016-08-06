@@ -1,0 +1,12 @@
+{
+  "url": "/SID0003030",
+  "expectations": {
+   "contains": ["full"]
+  },
+  "request": {
+    "file": "mvd_full.req"
+  },
+  "response": {
+    "file": "mvd_full.resp"
+  }
+}
