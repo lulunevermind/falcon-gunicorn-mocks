@@ -1,0 +1,38 @@
+[2016-08-06 15:23:19 +0300] [29695] [INFO] Starting gunicorn 19.6.0
+[2016-08-06 15:23:19 +0300] [29695] [INFO] Listening at: http://127.0.0.1:8000 (29695)
+[2016-08-06 15:23:19 +0300] [29695] [INFO] Using worker: sync
+[2016-08-06 15:23:19 +0300] [29698] [INFO] Booting worker with pid: 29698
+[2016-08-06 15:23:19 +0300] [29699] [INFO] Booting worker with pid: 29699
+[2016-08-06 15:23:19 +0300] [29700] [INFO] Booting worker with pid: 29700
+[2016-08-06 15:23:19 +0300] [29701] [INFO] Booting worker with pid: 29701
+[2016-08-06 15:23:19 +0300] [29702] [INFO] Booting worker with pid: 29702
+[2016-08-06 15:23:19 +0300] [29703] [INFO] Booting worker with pid: 29703
+[2016-08-06 15:23:19 +0300] [29704] [INFO] Booting worker with pid: 29704
+[2016-08-06 15:23:24 +0300] [29695] [INFO] Handling signal: int
+[2016-08-06 15:23:25 +0300] [29698] [INFO] Worker exiting (pid: 29698)
+[2016-08-06 15:23:25 +0300] [29703] [INFO] Worker exiting (pid: 29703)
+[2016-08-06 15:23:25 +0300] [29702] [INFO] Worker exiting (pid: 29702)
+[2016-08-06 15:23:25 +0300] [29700] [INFO] Worker exiting (pid: 29700)
+[2016-08-06 15:23:25 +0300] [29701] [INFO] Worker exiting (pid: 29701)
+[2016-08-06 15:23:25 +0300] [29699] [INFO] Worker exiting (pid: 29699)
+[2016-08-06 15:23:25 +0300] [29704] [INFO] Worker exiting (pid: 29704)
+[2016-08-06 15:23:25 +0300] [29695] [INFO] Shutting down: Master
+[2016-08-06 15:29:36 +0300] [29865] [INFO] Starting gunicorn 19.6.0
+[2016-08-06 15:29:36 +0300] [29865] [INFO] Listening at: http://127.0.0.1:8000 (29865)
+[2016-08-06 15:29:36 +0300] [29865] [INFO] Using worker: sync
+[2016-08-06 15:29:36 +0300] [29868] [INFO] Booting worker with pid: 29868
+[2016-08-06 15:29:36 +0300] [29869] [INFO] Booting worker with pid: 29869
+[2016-08-06 15:29:36 +0300] [29870] [INFO] Booting worker with pid: 29870
+[2016-08-06 15:29:36 +0300] [29871] [INFO] Booting worker with pid: 29871
+[2016-08-06 15:29:36 +0300] [29872] [INFO] Booting worker with pid: 29872
+[2016-08-06 15:29:36 +0300] [29873] [INFO] Booting worker with pid: 29873
+[2016-08-06 15:29:36 +0300] [29874] [INFO] Booting worker with pid: 29874
+[2016-08-06 15:29:38 +0300] [29865] [INFO] Handling signal: int
+[2016-08-06 15:29:39 +0300] [29874] [INFO] Worker exiting (pid: 29874)
+[2016-08-06 15:29:39 +0300] [29873] [INFO] Worker exiting (pid: 29873)
+[2016-08-06 15:29:39 +0300] [29870] [INFO] Worker exiting (pid: 29870)
+[2016-08-06 15:29:39 +0300] [29868] [INFO] Worker exiting (pid: 29868)
+[2016-08-06 15:29:39 +0300] [29869] [INFO] Worker exiting (pid: 29869)
+[2016-08-06 15:29:39 +0300] [29871] [INFO] Worker exiting (pid: 29871)
+[2016-08-06 15:29:39 +0300] [29872] [INFO] Worker exiting (pid: 29872)
+[2016-08-06 15:29:39 +0300] [29865] [INFO] Shutting down: Master
