@@ -1,5 +1,6 @@
 
 #gunicorn -k gevent -w 6 mocks
+#gunicorn -k "egg:meinheld#gunicorn_worker" -w 6 mocks
 # curl -v -XPOST 0.0.0.0:8000/SID0003030 -d @mvd_full.req
 # curl -v -XPOST localhost:8000/bigfile -d @bigfile.req
 #curl -v -XPOST localhost:8000/bigfile -d @bigfile_fake.req
