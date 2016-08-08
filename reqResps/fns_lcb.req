@@ -1,0 +1,78 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:rev="http://smev.gosuslugi.ru/rev111111" xmlns:rq="http://ws.unisoft/PGU/LCB/FindInfo/Rq"
+                  xmlns:ws="http://ws.unisoft/">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                       soapenv:actor="http://smev.gosuslugi.ru/actors/smev">
+            <wsse:BinarySecurityToken
+                    xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                    EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary"
+                    ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"
+                    wsu:Id="CertId-966FE5F15657648D1214583122562081"
+                    xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+                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
+            </wsse:BinarySecurityToken>
+            <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-1">
+                <ds:SignedInfo>
+                    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+                    <ds:Reference URI="#id-2">
+                        <ds:Transforms>
+                            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        </ds:Transforms>
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+                        <ds:DigestValue>4KIADvkNAoWeDuqLirkLQPrCSIuehuVYIDMlnysFyH8=</ds:DigestValue>
+                    </ds:Reference>
+                </ds:SignedInfo>
+                <ds:SignatureValue>
+                    pk85P2SqoaOfeqsI1mO+h6F+HDQlzdYCZdXyl6ud+4348pajWf5tckcD/ydnLT5lBUBd8gXS/puc
+                    9aN6l5pb9w==
+                </ds:SignatureValue>
+                <ds:KeyInfo Id="KeyId-966FE5F15657648D1214583122562212">
+                    <wsse:SecurityTokenReference
+                            xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                            wsu:Id="STRId-966FE5F15657648D1214583122562263"
+                            xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+                        <wsse:Reference URI="#CertId-966FE5F15657648D1214583122562081"
+                                        ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"
+                                        xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"/>
+                    </wsse:SecurityTokenReference>
+                </ds:KeyInfo>
+            </ds:Signature>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                  wsu:Id="id-2">
+        <ws:LCBFindInfo>
+            <rev:Message>
+                <rev:Sender>
+                    <rev:Code>EPGU001001</rev:Code>
+                    <rev:Name>ÅÏÃÓ</rev:Name>
+                </rev:Sender>
+                <rev:Recipient>
+                    <rev:Code>FNS001001</rev:Code>
+                    <rev:Name>ÔÍÑ Ðîññèè</rev:Name>
+                </rev:Recipient>
+                <rev:Originator>
+                    <rev:Code>EPGU001001</rev:Code>
+                    <rev:Name>ÅÏÃÓ</rev:Name>
+                </rev:Originator>
+                <rev:TypeCode>GSRV</rev:TypeCode>
+                <rev:Status>REQUEST</rev:Status>
+                <rev:Date>2016-03-18T05:44:15</rev:Date>
+                <rev:ExchangeType>2</rev:ExchangeType>
+            </rev:Message>
+            <rev:MessageData>
+                <rev:AppData>
+                    <rq:Äîêóìåíò ÂåðñÔîðì="4.01">
+                        <rq:inn>000333333334</rq:inn>
+                        <rq:fam>Òåñò</rq:fam>
+                        <rq:nam>Òåñòîíîãîâ</rq:nam>
+                        <rq:otch>Áàãîâè÷</rq:otch>
+                        <rq:regions>77</rq:regions>
+                    </rq:Äîêóìåíò>
+                </rev:AppData>
+            </rev:MessageData>
+        </ws:LCBFindInfo>
+    </soapenv:Body>
+</soapenv:Envelope>

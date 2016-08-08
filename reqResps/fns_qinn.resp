@@ -1,0 +1,44 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.unisoft/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ws:SendQINNFLResponse xmlns:ws="http://ws.unisoft/"
+                               xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <smev:Message xmlns:smev="http://smev.gosuslugi.ru/rev111111">
+                <smev:Sender>
+                    <smev:Code>FNS001001</smev:Code>
+                    <smev:Name>ÔÍÑ Ðîññèè</smev:Name>
+                </smev:Sender>
+                <smev:Recipient>
+                    <smev:Code>EPGU001001</smev:Code>
+                    <smev:Name>ÅÏÃÓ</smev:Name>
+                </smev:Recipient>
+                <smev:Originator>
+                    <smev:Code>EPGU001001</smev:Code>
+                    <smev:Name>ÅÏÃÓ</smev:Name>
+                </smev:Originator>
+                <smev:TypeCode>GSRV</smev:TypeCode>
+                <smev:Status>RESULT</smev:Status>
+                <smev:Date>2014-04-23T12:55:43Z</smev:Date>
+                <smev:ExchangeType>1</smev:ExchangeType>
+                <smev:RequestIdRef>da9c4b77-fc5b-46cf-aa4b-dd96cc097d20</smev:RequestIdRef>
+                <smev:OriginRequestIdRef>da9c4b77-fc5b-46cf-aa4b-dd96cc097d20</smev:OriginRequestIdRef>
+                <smev:ServiceCode/>
+                <smev:CaseNumber>24c1977d-83a5-4c2d-8f69-8a6298aa040f</smev:CaseNumber>
+            </smev:Message>
+            <smev:MessageData xmlns:smev="http://smev.gosuslugi.ru/rev111111">
+                <smev:AppData wsu:Id="fns-AppData">
+                    <changeOrderInfo xmlns="http://idecs.atc.ru/privateoffice/ws/changeorderinfo">
+                        <orderId>
+                            <pguId>24c1977d-83a5-4c2d-8f69-8a6298aa040f</pguId>
+                        </orderId>
+                        <statusCode>
+                            <orgCode>1</orgCode>
+                        </statusCode>
+                        <comment>523101233290</comment>
+                        <cancelAllowed>false</cancelAllowed>
+                    </changeOrderInfo>
+                </smev:AppData>
+            </smev:MessageData>
+        </ws:SendQINNFLResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

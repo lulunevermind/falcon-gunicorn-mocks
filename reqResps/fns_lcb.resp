@@ -1,0 +1,47 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.unisoft/" xmlns:rev="http://smev.gosuslugi.ru/rev111111" xmlns:chan="http://idecs.atc.ru/privateoffice/ws/changeorderinfo" xmlns:inc="http://www.w3.org/2004/08/xop/include">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:LCBFindInfoResponse xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <smev:Message xmlns:smev="http://smev.gosuslugi.ru/rev111111">
+            <smev:Sender>
+               <smev:Code>FNS001001</smev:Code>
+               <smev:Name>ФНС России</smev:Name>
+            </smev:Sender>
+            <smev:Recipient>
+               <smev:Code>EPGU001001</smev:Code>
+               <smev:Name>ЕПГУ</smev:Name>
+            </smev:Recipient>
+            <smev:Originator>
+               <smev:Code>EPGU001001</smev:Code>
+               <smev:Name>ЕПГУ</smev:Name>
+            </smev:Originator>
+            <smev:TypeCode>GSRV</smev:TypeCode>
+            <smev:Status>RESULT</smev:Status>
+            <smev:Date>2014-10-06T11:37:59Z</smev:Date>
+            <smev:ExchangeType>1</smev:ExchangeType>
+            <smev:RequestIdRef>60775898-a58b-4352-995a-918caa175d67</smev:RequestIdRef>
+            <smev:OriginRequestIdRef>60775898-a58b-4352-995a-918caa175d67</smev:OriginRequestIdRef>
+            <smev:ServiceCode/>
+            <smev:CaseNumber/>
+         </smev:Message>
+         <smev:MessageData xmlns:smev="http://smev.gosuslugi.ru/rev111111">
+            <smev:AppData wsu:Id="fns-AppData">
+               <changeOrderInfo xmlns="http://idecs.atc.ru/privateoffice/ws/changeorderinfo">
+                  <orderId>
+                     <orgId/>
+                  </orderId>
+                  <statusCode>
+                     <orgCode>1</orgCode>
+                  </statusCode>
+                  <comment/>
+                  <cancelAllowed>false</cancelAllowed>
+               </changeOrderInfo>
+            </smev:AppData>
+            <smev:AppDocument>
+               <smev:RequestCode>req_51f90681-2e87-487e-b8f1-107aaa84282d</smev:RequestCode>
+               <smev:BinaryData>UEsDBBQACAAIAL18RkUAAAAAAAAAAAAAAAAGAAAAcGQueG1s7ZbRThNBFIZf5WSu9MIyszu73U0o3PkE+gALLbBpu9u0C8E7MEQvNIEQ0AaxCpp44wUBiQXS9hXOvoJP4j9bKVVpxIQam7BNmplz5sw5+++XMzM9u1qt0Eqp3gjjqCBUTgoqRfNxMYwWC+Lxo4cPPDE7M10vLcJfCRsJhcWCsGw7r5VUSly6iBBTKoh8XlBjqSAkPLUihVG0UDFWqaWl8r7t2YIWwrggeJub/Ba/Ju9xi7eJ93kLwwMY9gneLX7Du/yeP+PfrP0kzG61+HI7x/M9JCvXalc2JaUSFAVhNbPxB+6la3zEx3zBp9zhNp9SuoHhFz7NHBfpS5i7fMJd4nOs/IrpUfocS87S9fQpIo+Ie8Z7kkOF3XQdy46xzT2U9BHlHxBqhBmONrfp28YrPQgw7zSIuA9h5pdKSVaZllDPU9KT2YO6NQo3EkZGmyZ3sF8PVZynz7idbtKIXHSVbDhXX4O5ICpjsxYf8g5ENHIauXdJmcJakHrP6CxoLsQ6qbXj2ZmA5bhez2qF9ZpH0EpYjIJKDEL4MNOxX243XYNknfQFn5HREapDWkFxOUjwWtrB58d++GhzSKg8S0kXYCgLbMCuFFyNepwVk1MyZ0mlYVmuVgNE266ncyY6bkS1SpAg+WveEZQ8qfWnJjoJkuWGQU4BtDAqllaL8XyWS/q+6yjtaK0cy7F9D36gfDkXU2MF1naV8rWHpFfA2i4o+A+Atd1/SexQtklA1gegN0PW+g1ZZeeVc2vIaheADyGrx4wsXvyux6KfT0KPxXFkTotOuolj5gbt1vpju1XS8RU68Oh2y+949y86rmNOuCF8nTHje9dxf9xHaBI67vUAj26+vwJ8TfO1tJdzbo9f17J+4tc1/E71L8aDgbkhz3wHUEsHCD3P4f6gAgAAVAsAAFBLAwQUAAgACAC9fEZFAAAAAAAAAAAAAAAAFwAAAGFyY2hpdmUtZGVzY3JpcHRpb24ueG1sbU9NC4JAEL0H/YfwGrkaEQXjBqFCEURhYd0WnXJF18Xdovr1bXuS6jS8N/M+BhaPuhrcsVW8EYHju54zQJE1ORfXwDkk8WjmLGi/B6zNCn7HEFXWcqnNNYULr7qE+mEoCFYjlblrUoBYAMYcqQ/EToOERqGTp0TKpKx4xj7mxAq6SyiYKuh2fo50XpZq6W0imbDLcB9H6XHMX9MVVrsbntapt1ZyEs4CIFYC5Ksn/WFMc/LnwTdQSwcIKGsVMbYAAAAdAQAAUEsBAhQAFAAIAAgAvXxGRT3P4f6gAgAAVAsAAAYAAAAAAAAAAAAAAAAAAAAAAHBkLnhtbFBLAQIUABQACAAIAL18RkUoaxUxtgAAAB0BAAAXAAAAAAAAAAAAAAAAANQCAABhcmNoaXZlLWRlc2NyaXB0aW9uLnhtbFBLBQYAAAAAAgACAHkAAADPAwAAAAA=</smev:BinaryData>
+            </smev:AppDocument>
+         </smev:MessageData>
+      </ws:LCBFindInfoResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
