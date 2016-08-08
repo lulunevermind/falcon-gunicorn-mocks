@@ -18,4 +18,3 @@ class DefaultHandler(object):
                             response = expectations['response']
                             resp.body = response
                             resp.append_header("Content-Type", "text/xml; charset=utf-8")
-                            # logging.info('Response found -->> %s' % response)

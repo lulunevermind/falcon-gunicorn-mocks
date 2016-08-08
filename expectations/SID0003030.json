@@ -1,6 +1,6 @@
 {
   "url": "/SID0003030",
   "expectations": [
-    {"contains": ["full"], "request": "mvd_full.req", "response": "mvd_full.resp"}
+    {"contains": ["<dob:usrN>"], "request": "mvd_full.req", "response": "mvd_full.resp"}
   ]
 }
