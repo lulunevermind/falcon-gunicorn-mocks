@@ -1,0 +1,141 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.red-soft.biz/ncore/dx/1.1/smev24/ws" xmlns:rev="http://smev.gosuslugi.ru/rev111111" xmlns:inc="http://www.w3.org/2004/08/xop/include">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:DXSmev xmlns:ws="http://www.red-soft.biz/ncore/dx/1.1/smev24/ws" xmlns:dx="http://www.red-soft.biz/ncore/dx/1.1" xmlns:smev="http://smev.gosuslugi.ru/rev111111">
+            <smev:Message>
+                <smev:Sender>
+                    <smev:Code>FSSP01001</smev:Code>
+                    <smev:Name>ФССП России</smev:Name>
+                </smev:Sender>
+                <smev:Recipient>
+                    <smev:Code>IPGU01001</smev:Code>
+                    <smev:Name>Единый портал государственных услуг</smev:Name>
+                </smev:Recipient>
+                <smev:Originator>
+                    <smev:Code>IPGU01001</smev:Code>
+                    <smev:Name>Единый портал государственных услуг (gosuslugi.ru)</smev:Name>
+                </smev:Originator>
+                <smev:TypeCode>GSRV</smev:TypeCode>
+                <smev:Status>RESULT</smev:Status>
+                <smev:Date>2015-03-29T16:08:04</smev:Date>
+                <smev:ExchangeType>1</smev:ExchangeType>
+                <smev:RequestIdRef>065204b9-f989-4bc1-b77f-ff1e4c58e05b</smev:RequestIdRef>
+                <smev:OriginRequestIdRef>065204b9-f989-4bc1-b77f-ff1e4c58e05b</smev:OriginRequestIdRef>
+                <smev:CaseNumber>85932616</smev:CaseNumber>
+            </smev:Message>
+            <smev:MessageData>
+                <smev:AppData>
+                    <dx:DXBox>
+                        <dx:DXControl id="1077010" sequence="0" session_id="3882" time_sent="2015-03-29T16:08:04">
+                            <dx:Direction>
+                                <dx:Sender>
+                                    <dx:Org>ФССП</dx:Org>
+                                    <dx:Dept>МВВ</dx:Dept>
+                                </dx:Sender>
+                                <dx:Recipient>
+                                    <dx:Org>ЕПГУ</dx:Org>
+                                </dx:Recipient>
+                                <dx:Protocol>общее_0.5</dx:Protocol>
+                            </dx:Direction>
+                            <dx:Pack>
+                                <dx:MaxCount>10</dx:MaxCount>
+                            </dx:Pack>
+                            <dx:File>
+                                <dx:MaxFileSize>52428800</dx:MaxFileSize>
+                            </dx:File>
+                        </dx:DXControl>
+                        <dx:DXDocumentResult id="1077008" reply_to="85932616+2015-03-29T04:09:00" sequence="1" time_sent="2015-03-29T16:08:04">
+                            <dx:Direction>
+                                <dx:Sender>
+                                    <dx:Org>ФССП</dx:Org>
+                                    <dx:Dept>МВВ</dx:Dept>
+                                </dx:Sender>
+                                <dx:Recipient>
+                                    <dx:Org>ЕПГУ</dx:Org>
+                                </dx:Recipient>
+                                <dx:Protocol>общее_0.5</dx:Protocol>
+                            </dx:Direction>
+                            <dx:Status>SUCCESS</dx:Status>
+                            <dx:DocRef env_id="85932616+2015-03-29T04:09:00" id="85932616+2015-03-29T04:09:00" receiver_id="221009697425"/>
+                            <dx:State>FIN</dx:State>
+                            <dx:Document>
+                                <DebtorIPListResponseType>
+                                    <responseKey>221009697427</responseKey>
+                                    <requestKey>859326162015-03-29T04:09:00</requestKey>
+                                    <debtor>
+                                        <type>2</type>
+                                        <FIO>
+                                            <Surname>Аксенов</Surname>
+                                            <FirstName>Дмитрий</FirstName>
+                                            <Patronymic>Олегович</Patronymic>
+                                        </FIO>
+                                        <birthDate>1986-01-30</birthDate>
+                                        <birthYear>1986</birthYear>
+                                    </debtor>
+                                    <IPInformation>
+                                        <IPKey>45461027797343</IPKey>
+                                        <IDType>3</IDType>
+                                        <IDName>Акт по делам об административных правонарушениях</IDName>
+                                        <IDNum>18810177140907261139</IDNum>
+                                        <IDDate>2015-03-05</IDDate>
+                                        <number>122312/15/77046-ИП</number>
+                                        <riseDate>2015-03-19</riseDate>
+                                        <debtText>Штраф гибдд</debtText>
+                                        <debtorName>АКСЕНОВ ДМИТРИЙ ОЛЕГОВИЧ</debtorName>
+                                        <debtorBirthDate>1986-01-30</debtorBirthDate>
+                                        <debtorBirthYear>1986</debtorBirthYear>
+                                        <debtorBirthplace>МОСКВА</debtorBirthplace>
+                                        <debtSum>500.00</debtSum>
+                                        <debtRestTotal>500.00</debtRestTotal>
+                                        <debtRestIP>500.00</debtRestIP>
+                                        <debtRestFine>0.00</debtRestFine>
+                                        <debtRestDuty>0.00</debtRestDuty>
+                                        <debtRestOther>0.00</debtRestOther>
+                                        <ospCode>77046</ospCode>
+                                        <divName>Межрайонный отдел судебных приставов по взысканию административных
+                                            штрафов №2
+                                        </divName>
+                                        <divAdr>119331, Россия, г. Москва, , , , пер. Мосфильмовский 2-й, 8А, ,</divAdr>
+                                        <SPIShortName>КУРБАНОВА Е. Н.</SPIShortName>
+                                        <SPITelephone>749905581843</SPITelephone>
+                                        <actualityDate>2015-03-28T15:30:36</actualityDate>
+                                        <unifoChargeFssp>32277046150122312009</unifoChargeFssp>
+                                    </IPInformation>
+                                    <IPInformation>
+                                        <IPKey>45461021674609</IPKey>
+                                        <IDType>3</IDType>
+                                        <IDName>Акт по делам об административных правонарушениях</IDName>
+                                        <IDNum>18810177140817125481</IDNum>
+                                        <IDDate>2015-02-02</IDDate>
+                                        <number>51438/15/77046-ИП</number>
+                                        <riseDate>2015-02-25</riseDate>
+                                        <debtText>Штраф гибдд</debtText>
+                                        <debtorName>АКСЕНОВ ДМИТРИЙ ОЛЕГОВИЧ</debtorName>
+                                        <debtorBirthDate>1986-01-30</debtorBirthDate>
+                                        <debtorBirthYear>1986</debtorBirthYear>
+                                        <debtorBirthplace>МОСКВА</debtorBirthplace>
+                                        <debtSum>500.00</debtSum>
+                                        <debtRestTotal>500.00</debtRestTotal>
+                                        <debtRestIP>500.00</debtRestIP>
+                                        <debtRestFine>0.00</debtRestFine>
+                                        <debtRestDuty>0.00</debtRestDuty>
+                                        <debtRestOther>0.00</debtRestOther>
+                                        <ospCode>77046</ospCode>
+                                        <divName>Межрайонный отдел судебных приставов по взысканию административных
+                                            штрафов №2
+                                        </divName>
+                                        <divAdr>119331, Россия, г. Москва, , , , пер. Мосфильмовский 2-й, 8А, ,</divAdr>
+                                        <SPIShortName>КОЛОДЯЖНАЯ Т. Ю.</SPIShortName>
+                                        <SPITelephone>74995581844</SPITelephone>
+                                        <actualityDate>2015-03-28T15:30:36</actualityDate>
+                                        <unifoChargeFssp>32277046150051438005</unifoChargeFssp>
+                                    </IPInformation>
+                                </DebtorIPListResponseType>
+                            </dx:Document>
+                        </dx:DXDocumentResult>
+                    </dx:DXBox>
+                </smev:AppData>
+            </smev:MessageData>
+        </ws:DXSmev>
+   </soapenv:Body>
+</soapenv:Envelope>

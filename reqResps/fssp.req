@@ -1,0 +1,99 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Header>
+        <wsse:Security S:actor="http://smev.gosuslugi.ru/actors/smev"
+                       xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:BinarySecurityToken
+                    EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary"
+                    ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"
+                    wsu:Id="CertId-8C1B025419964B8A6D145641429126183842"
+                    xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                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
+            </wsse:BinarySecurityToken>
+            <ds:Signature Id="Signature-55895" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:SignedInfo>
+                    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+                    <ds:Reference URI="#id-55896">
+                        <ds:Transforms>
+                            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        </ds:Transforms>
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+                        <ds:DigestValue>85Z8pEQMt0e4nLPbUeQ8ro7KKbZHyIxkc6tsYZtZm7I=</ds:DigestValue>
+                    </ds:Reference>
+                </ds:SignedInfo>
+                <ds:SignatureValue>
+                    yZwr+BnwePRsRxgpXYCcgkoSrIARwrebftDxeNLrmYcHhKf+hFdNTg7x5/K9o5ej4h73Ab2ByZG9
+                    boEOtM4txw==
+                </ds:SignatureValue>
+                <ds:KeyInfo Id="KeyId-8C1B025419964B8A6D145641429126183843">
+                    <wsse:SecurityTokenReference wsu:Id="STRId-8C1B025419964B8A6D145641429126183844"
+                                                 xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                        <wsse:Reference URI="#CertId-8C1B025419964B8A6D145641429126183842"
+                                        ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/>
+                    </wsse:SecurityTokenReference>
+                </ds:KeyInfo>
+            </ds:Signature>
+        </wsse:Security>
+    </S:Header>
+    <S:Body wsu:Id="id-55896"
+            xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <ws:DXSmev xmlns:ws="http://www.red-soft.biz/ncore/dx/1.1/smev24/ws"
+                   xmlns:dx="http://www.red-soft.biz/ncore/dx/1.1" xmlns:smev="http://smev.gosuslugi.ru/rev111111">
+            <smev:Message>
+                <smev:Sender>
+                    <smev:Code>IPGU01001</smev:Code>
+                    <smev:Name>Åäèíûé ïîðòàë ãîñóäàðñòâåííûõ óñëóã (gosuslugi.ru)</smev:Name>
+                </smev:Sender>
+                <smev:Recipient>
+                    <smev:Code>FSSP01001</smev:Code>
+                    <smev:Name>ÔÑÑÏ Ðîññèè</smev:Name>
+                </smev:Recipient>
+                <smev:Originator>
+                    <smev:Code>IPGU01001</smev:Code>
+                    <smev:Name>Åäèíûé ïîðòàë ãîñóäàðñòâåííûõ óñëóã (gosuslugi.ru)</smev:Name>
+                </smev:Originator>
+                <smev:TypeCode>GSRV</smev:TypeCode>
+                <smev:Status>REQUEST</smev:Status>
+                <smev:Date>2016-02-25T06:31:31</smev:Date>
+                <smev:ExchangeType>1</smev:ExchangeType>
+                <smev:CaseNumber>26981200-1eaf-4b78-9ac8-13277bbccb5d</smev:CaseNumber>
+            </smev:Message>
+            <smev:MessageData>
+                <smev:AppData>
+                    <dx:DXBox>
+                        <dx:DXPutDocument doc_id="26981200-1eaf-4b78-9ac8-13277bbccb5d"
+                                          env_id="26981200-1eaf-4b78-9ac8-13277bbccb5d"
+                                          id="26981200-1eaf-4b78-9ac8-13277bbccb5d+2016-02-25T06:31:31"
+                                          time_sent="2016-02-25T06:31:31">
+                            <dx:Direction>
+                                <dx:Sender>
+                                    <dx:Org>ÅÏÃÓ</dx:Org>
+                                </dx:Sender>
+                                <dx:Recipient>
+                                    <dx:Org>ÔÑÑÏ</dx:Org>
+                                    <dx:Dept>ÌÂÂ</dx:Dept>
+                                </dx:Recipient>
+                                <dx:Protocol>îáùåå_0.5</dx:Protocol>
+                            </dx:Direction>
+                            <dx:Document>
+                                <debtorIPListRequest>
+                                    <requestKey>26981200-1eaf-4b78-9ac8-13277bbccb5d</requestKey>
+                                    <debtor>
+                                        <type>2</type>
+                                        <FIO>
+                                            <Surname>Surname</Surname>
+                                            <FirstName>FirstName</FirstName>
+                                            <Patronymic>Patronymic</Patronymic>
+                                        </FIO>
+                                        <birthDate>1978-01-03</birthDate>
+                                        <birthYear>1978</birthYear>
+                                    </debtor>
+                                </debtorIPListRequest>
+                            </dx:Document>
+                        </dx:DXPutDocument>
+                    </dx:DXBox>
+                </smev:AppData>
+            </smev:MessageData>
+        </ws:DXSmev>
+    </S:Body>
+</S:Envelope>
