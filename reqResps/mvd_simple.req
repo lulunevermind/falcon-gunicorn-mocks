@@ -1,9 +1,10 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pgufg="http://idecs.atc.ru/pgufg/ws/fgapc/" xmlns="urn://x-artefacts-it-ru/dob/state-services/road-police/business-data/1.3.1" xmlns:ns1="urn://x-artefacts-it-ru/dob/poltava/common-types/1.5" xmlns:ns="urn://x-artefacts-it-ru/dob/poltava/application/types/1.0">
-  <soapenv:Header>
-  </soapenv:Header>
-  <soapenv:Body>
-    <ns:setApplicationRequest>
-    simple
-    </ns:setApplicationRequest>
-  </soapenv:Body>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dob="http://dobdd.mvd.ru/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <dob:srchAdm>
+            <dob:usrF>simple</dob:usrF>
+            <dob:VU>1111111111</dob:VU>
+            <dob:tsRz>ë111ïë111</dob:tsRz>
+        </dob:srchAdm>
+    </soapenv:Body>
 </soapenv:Envelope>
