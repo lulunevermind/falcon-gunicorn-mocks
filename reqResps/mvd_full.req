@@ -1,9 +1,14 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pgufg="http://idecs.atc.ru/pgufg/ws/fgapc/" xmlns="urn://x-artefacts-it-ru/dob/state-services/road-police/business-data/1.3.1" xmlns:ns1="urn://x-artefacts-it-ru/dob/poltava/common-types/1.5" xmlns:ns="urn://x-artefacts-it-ru/dob/poltava/application/types/1.0">
-  <soapenv:Header>
-  </soapenv:Header>
-  <soapenv:Body>
-    <ns:setApplicationRequest>
-    full
-    </ns:setApplicationRequest>
-  </soapenv:Body>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dob="http://dobdd.mvd.ru/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <dob:srchAdm>
+            <dob:usrF>Èâàíîâ2</dob:usrF>
+            <dob:usrN>Èâàí2</dob:usrN>
+            <dob:usrS>Èâàíîâè÷2</dob:usrS>
+            <dob:usrDB>1970-03-18</dob:usrDB>
+            <dob:usrSNILS>000-333-333 33</dob:usrSNILS>
+            <dob:VU>4444444444</dob:VU>
+            <dob:tsRz/>
+        </dob:srchAdm>
+    </soapenv:Body>
 </soapenv:Envelope>
