@@ -17,4 +17,6 @@ class DefaultHandler(object):
                         if body.__contains__(exp.encode('utf-8')):
                             response = expectations['response']
                             resp.body = response
+                            logging.info('Match for %s succeded!' % exp.encode('utf-8'))
+                            logging.info('Response:\n%s' % response)
                             resp.append_header("Content-Type", "text/xml; charset=utf-8")
