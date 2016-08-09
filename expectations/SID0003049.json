@@ -1,7 +1,7 @@
 {
   "url": "/SID0003049",
   "expectations": [
-    {"contains": ["</ws:SendQINNFL>"], "request": "fns_qinn.req", "response": "fns_qinn.resp"},
+    {"contains": ["</ws:SendQINNFL>"], "request": "fns_qinn.req", "response": "fns_qinn.resp", "response-header": {"Content-Type": "text/xml; charset=utf-8"}},
     {"contains": ["</ws:LCBFindInfo>"], "request": "fns_lcb.req", "response": "fns_lcb.resp"}
   ]
 }
