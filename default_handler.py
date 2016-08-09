@@ -15,7 +15,7 @@ class DefaultHandler(object):
                 #from here we parsing expectation line like {"contains": ["<dob:usrF>simple</dob:usrF>"],
                 #  "request": "mvd_simple.req", "response": "mvd_simple.resp",
                 #"response-header": {"Content-Type": "text/xml; charset=utf-8", "Accept": "ALL"}}
-                response_headers = expectations.get("response-header")
+                response_headers = expectations.get("response-header", default=[])
                 if expectation == 'contains':
                     for exp in expressions:
                         if body.__contains__(exp.encode('utf-8')):
