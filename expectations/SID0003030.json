@@ -1,7 +1,9 @@
 {
   "url": "/SID0003030",
   "expectations": [
-    {"contains": ["<dob:usrN>"], "request": "mvd_full.req", "response": "mvd_full.resp"},
-    {"contains": ["<dob:usrF>simple</dob:usrF>"], "request": "mvd_simple.req", "response": "mvd_simple.resp"}
+    {"contains": ["<dob:usrN>"], "request": "mvd_full.req", "response": "mvd_full.resp",
+      "response-header": {"Content-Type": "text/xml; charset=utf-8"}},
+    {"contains": ["<dob:usrF>simple</dob:usrF>"], "request": "mvd_simple.req", "response": "mvd_simple.resp",
+      "response-header": {"Content-Type": "text/xml; charset=utf-8"}}
   ]
 }
