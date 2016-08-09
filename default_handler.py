@@ -23,5 +23,6 @@ class DefaultHandler(object):
                             resp.body = response
                             logging.info('Match for %s succeded!' % exp.encode('utf-8'))
                             logging.info('Setting headers: %s' % response_headers)
+                            logging.info('Response: %s' % response)
                             for k, v in response_headers.items():
                                 resp.append_header(k, v)
